@@ -1,1 +1,119 @@
-.
+#include <iostream>
+using namespace std;
+
+int calculator();
+int calculator(){
+        cout<<"\033[1;4;36m Calculator By Muhammad Abdullah \033[0m\n\033[1;36m========================\033[0m\n "<<endl;
+        cout<<"(1) Addition (+) Enter 1 \n";
+        cout<<"(2) Subtraction (-) Enter 2 \n";
+        cout<<"(3) Division (/) Enter 3 \n";
+        cout<<"(4) Multiplication (*) Enter 4 \n";
+        cout<<"(5) Square (²) Enter 5 \n";
+        cout<<"(6) Cube (³) Enter 6 \n";
+        cout<<"(7) Table: Multiples UpTo 10 (*10) Enter 7 \n";
+        cout<<"(8) Left Shift (<<) Enter 8 \n";
+        cout<<"(9) Right Shift (>>) Enter 9 \n";
+        cout<<"Enter (10) to Exit Calculator\n\n";
+}
+
+int main (){
+        calculator();
+        while (true){
+                int choose1;
+                cout<<"Enter a Number : ";
+                cin>>choose1;
+
+                switch (choose1){
+                        case 1:
+                        double num1,num2,sum;
+                        cout<<"\n Enter the First Number :";
+                        cin>>num1;
+                        cout<<" Enter the Second Number : ";
+                        cin>>num2;
+                        sum=num1+num2;
+                        cout<<" The Sum of the Numbers is : "<<num1<<" + "<<num2<<" =  "<<"\033[1;4;7m"<<sum<<"\033[0m\n\n";
+                        break;
+
+                                case 2:
+                        double num3,num4,dif;
+                        cout<<"\n Enter the First Number :";
+                        cin>>num3;
+                        cout<<" Enter the Second Number : ";
+                        cin>>num4;
+                        dif=num3-num4;
+                        cout<<" The Difference of the Numbers is : "<<num3<<" - "<<num4<<" =  "<<"\033[1;4;7m "<<dif<<"\033[0m\n\n";
+                        break;
+
+                                case 3:
+                        double num5,num6,mul;
+                        cout<<"\n Enter the First Number :";
+                        cin>>num5;
+                        cout<<" Enter the Second Number : ";
+                        cin>>num6;
+                        mul=num5*num6;
+                        cout<<" The Product of the Numbers is : "<<num5<<" * "<<num6<<" =   "<<"\033[1;4;7m"<<mul<<"\033[0m\n\n";
+                        break;
+
+                                case 4:
+                        double num7,num8,div;
+                        cout<<"\n Enter the First Number :";
+                        cin>>num7;
+                        cout<<" Enter the Second Number : ";
+                        cin>>num8;
+                        div=num7/num8;
+                        cout<<" The Division of the Numbers is : "<<num7<<" / "<<num8<<" =   \033[1;4;7m"<<div<<"\033[0m\n\n";
+                        break;
+
+                        case 5:
+                        double num9,square;
+                        cout<<" Enter Number to get it's Square :";
+                        cin>>num9;
+                        square=num9*num9;
+                        cout<<"The Square of the Number is :"<<num9<<"²  =  \033[1;4;7m"<<square<<"\033[0m\n\n";
+                        break;
+
+                        case 6:
+                        double num10,cube;
+                        cout<<" Enter Number to get it's Cube :";
+                        cin>>num10;
+                        cube=num10*num10*num10;
+                        cout<<"The Cube of the Number is :"<<num10<<"³  =  \033[1;4;7m"<<cube<<"\033[0m\n\n";
+                        break;
+
+                        case 7:
+                        double num11;
+                        cout<<" Enter the Number : ";
+                        cin>>num11;
+                        int index;
+        for(index=1;index<=10;index=index+1)
+        cout<<num11<<"*" <<index<<" = \033[1;4;7m" <<index*num11<<"\033[0m\n"<<endl;
+                        break;
+
+                        case 8: 
+                        int num12, leftshift1;
+                        cout<<" Enter the Number to get Left Shift : ";
+                        cin>>num12;
+                        leftshift1=num12<<1;
+                        cout<<"The Left Shift of the given number is : \033[1;4;7"<<leftshift1<<"\033[0m\n";
+                        break;
+
+                        case 9:
+                        int num13, rightshift1;
+                        cout<<"Enter the Number to get Right Shift : ";
+                        cin>>num13;
+                        rightshift1=num13>>1;
+                        cout<<"The Right Shift of the given number is : \033[1;4;7m"<<rightshift1<<"\033[0m\n";
+                        break;
+
+                        case 10: cout<<"\033[1;4;36mExiting the Calculator\nThanks For Using\033[0m";
+                        return 0;
+                        break;
+                        default :cout<<" Are You blind that you can't see a Number Above\n"<<endl;
+                        break;
+                }
+        }
+//Created by : Muhammad Abdullah 
+//Roll Number : 0119
+//BSCS Class 
+        return 0;
+}
