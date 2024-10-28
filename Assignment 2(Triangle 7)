@@ -1,1 +1,22 @@
-.
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int rows,row2,colum,x;
+
+    cout << "Enter the Size of Triangle : ";
+    cin >>x;
+
+    for (rows = 1; rows <= x; ++rows) {
+        for (colum = 1; colum <= x - rows; ++colum) {
+            cout << " ";
+        }
+        for (row2 = 1; row2 <= 2 * rows - 1; ++row2) {
+            cout << "*";
+        }
+        cout << "\n";
+    }
+//Created By: Muhammad Abdullah 0119 BSCS
+    return 0;
+}
