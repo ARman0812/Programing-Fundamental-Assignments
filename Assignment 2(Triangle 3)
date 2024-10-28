@@ -1,1 +1,19 @@
-.
+#include <iostream>
+using namespace std;
+
+int main (){
+	int colum;
+	int row;
+	int x;
+	cout<<"Enter the Size of Triangle : ";
+	cin>>x;
+	
+	for (row=1;row<=x;row++){
+		cout<<endl;
+		for (colum=row;colum<=x;colum++){
+		cout<<"*";
+		}
+	}
+	//Created By : Muhammad Abdullah 0119 BSCS
+	return 0;	
+}
